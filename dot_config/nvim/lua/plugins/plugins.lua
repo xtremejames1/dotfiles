@@ -65,5 +65,16 @@ local plugins = {
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+
+      vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
+    end,
+  },
+  {
+    "tpope/vim-fugitive",
+  },
 }
 return plugins
