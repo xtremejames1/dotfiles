@@ -111,8 +111,12 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim=nvim
+alias grep=rg
+alias ls=exa
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
+
+eval $(thefuck --alias)
