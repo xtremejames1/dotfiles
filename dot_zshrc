@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions ubuntu zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions ubuntu zsh-syntax-highlighting zsh-vim-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,14 +113,20 @@ fi
 alias vim=nvim
 alias grep=rg
 alias ls=exa
-alias cat=batcat
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
-eval "$(atuin init zsh)"
 
 bindkey -v
+
+# zsh-vim-mode settings
+MODE_CURSOR_VIINS="#00ffff blinking bar"
+MODE_CURSOR_REPLACE="blinking underline #ff0000"
+MODE_CURSOR_VICMD="green block"
+MODE_CURSOR_SEARCH="#ff00ff steady underline"
+MODE_CURSOR_VISUAL="$MODE_CURSOR_VICMD steady bar"
+MODE_CURSOR_VLINE="$MODE_CURSOR_VISUAL #00ffff"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
