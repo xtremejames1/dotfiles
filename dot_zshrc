@@ -113,10 +113,12 @@ fi
 alias vim=nvim
 alias grep=rg
 alias ls=exa
+alias cat=batcat
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
+eval "$(atuin init zsh)"
 
 bindkey -v
 
