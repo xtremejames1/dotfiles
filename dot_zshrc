@@ -123,9 +123,9 @@ eval "$(atuin init zsh)"
 bindkey -v
 
 # zsh-vim-mode settings
-MODE_CURSOR_VIINS="#00ffff blinking bar"
-MODE_CURSOR_REPLACE="blinking underline #ff0000"
-MODE_CURSOR_VICMD="green block"
+MODE_CURSOR_VIINS="#dce0b1 blinking bar"
+MODE_CURSOR_REPLACE="blinking underline #8a3129"
+MODE_CURSOR_VICMD="#5c7a38 blinking block"
 MODE_CURSOR_SEARCH="#ff00ff steady underline"
 MODE_CURSOR_VISUAL="$MODE_CURSOR_VICMD steady bar"
 MODE_CURSOR_VLINE="$MODE_CURSOR_VISUAL #00ffff"
