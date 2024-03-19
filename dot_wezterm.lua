@@ -73,7 +73,7 @@ else
 end
 
 -- drip
-config.color_scheme = "GruvboxDark"
+config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("FiraCode Nerd Font")
 config.font_size = 10
 config.default_cursor_style = "BlinkingBar"
