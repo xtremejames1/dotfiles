@@ -48,32 +48,20 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		label = "Pwsh",
 		args = { "pwsh.exe", "-NoLogo" },
 	})
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "powershell.exe", "-NoLogo" },
-	})
-	table.insert(launch_menu, {
-		label = "Pwsh No Profile",
-		args = { "pwsh.exe", "-NoLogo", "-NoProfile" },
-	})
-	table.insert(launch_menu, {
-		label = "PowerShell No Profile",
-		args = { "powershell.exe", "-NoLogo", "-NoProfile" },
-	})
 else
 	--- Non-Windows Machine
 	table.insert(launch_menu, {
-		label = "Pwsh",
-		args = { "/usr/local/bin/pwsh", "-NoLogo" },
+		label = "Zsh",
+		args = { "/usr/local/bin/zsh" },
 	})
 	table.insert(launch_menu, {
-		label = "Pwsh No Profile",
-		args = { "/usr/local/bin/pwsh", "-NoLogo", "-NoProfile" },
+		label = "Bash",
+		args = { "/usr/local/bin/bash" },
 	})
 end
 
 -- drip
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "GruvboxDark"
 config.font = wezterm.font("FiraCode Nerd Font")
 config.font_size = 10
 config.default_cursor_style = "BlinkingBar"
