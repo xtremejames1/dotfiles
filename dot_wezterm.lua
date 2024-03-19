@@ -51,17 +51,17 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 else
 	--- Non-Windows Machine
 	table.insert(launch_menu, {
-		label = "Zsh",
-		args = { "/usr/local/bin/zsh" },
+		label = "zsh",
+		args = { "zsh", "-l" },
 	})
 	table.insert(launch_menu, {
-		label = "Bash",
-		args = { "/usr/local/bin/bash" },
+		label = "bash",
+		args = { "bash", "-l" },
 	})
 end
 
 -- drip
-config.color_scheme = "GruvboxDark"
+config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("FiraCode Nerd Font")
 config.font_size = 10
 config.default_cursor_style = "BlinkingBar"
