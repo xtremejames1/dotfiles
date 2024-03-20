@@ -112,12 +112,7 @@ export OPEN_WEATHER_API_KEY="150c62809890af23fa63a826b87b4ced"
 alias vim=nvim
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-<<<<<<< Updated upstream
 
 source /home/xtremejames1/.config/broot/launcher/bash/br
-=======
 eval "$(/bin/brew shellenv)"
-eval "$(/bin/brew shellenv)"
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
->>>>>>> Stashed changes
