@@ -62,7 +62,7 @@ end
 
 -- drip
 config.color_scheme = "Catppuccin Mocha"
-config.font = wezterm.font("IosevkaTerm Nerd Font Mono Bold")
+config.font = wezterm.font("IosevkaTerm Nerd Font Mono", { weight = "Medium", italic = false })
 config.font_size = 10
 config.default_cursor_style = "BlinkingBar"
 config.launch_menu = launch_menu
