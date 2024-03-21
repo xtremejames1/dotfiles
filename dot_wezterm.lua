@@ -51,12 +51,12 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 else
 	--- Non-Windows Machine
 	table.insert(launch_menu, {
-		label = "Zsh",
-		args = { "/usr/local/bin/zsh" },
+		label = "zsh",
+		args = { "zsh", "-l" },
 	})
 	table.insert(launch_menu, {
-		label = "Bash",
-		args = { "/usr/local/bin/bash" },
+		label = "bash",
+		args = { "bash", "-l" },
 	})
 end
 
